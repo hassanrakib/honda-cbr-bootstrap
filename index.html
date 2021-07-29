@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+        integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f"
+        crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Title -->
+    <title>honda-cbr</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top Banner -->
+        <section class="container py-5">
+            <!-- Top Banner Grid -->
+            <div class="row row-cols-1 row-cols-lg-2 align-items-center gy-5 gy-lg-0">
+                <!-- Top Banner Text Column -->
+                <div class="col">
+                    <small class="fw-light text-light d-block mb-2">Computer-controlled digital transistorized with
+                        electronic
+                        advance</small>
+                    <h1 class="text-white mb-3">Honda CBR 300R</h1>
+                    <p class="text-light fw-light mb-4">The CBR300R features full-cowl supersport styling and dual
+                        headlights,
+                        increasing aero efficiency and carrying the styling cues from our CBR-RR series.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-custom-style text-white px-5 py-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Purchase
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Your Shopping Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-1 p-sm-3">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Qty</th>
+                                                <th scope="col">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Honda CBR 300R</td>
+                                                <td>$4,699</td>
+                                                <td><input type="text" class="form-control" id="input1" value="1"></td>
+                                                <td>$4,699</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- Table Ends -->
+                                    <!-- Total Price -->
+                                    <div class="d-flex justify-content-end">
+                                        <h5>Total: <span class="price text-success">$4,699</span></h5>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-warning">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Banner Image Column -->
+                <div class="col">
+                    <img src="images/header-bike.png" alt="" class="mw-100">
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Main -->
+    <main class="mt-5">
+        <!-- Featured Bikes -->
+        <section class="container custom-margin">
+            <div class="text-center custom-margin">
+                <h1>Featured Bikes 2021</h1>
+                <small class="d-block position-relative custom-after">Best Bikes Collection in Our <span
+                        class="fw-bolder orange">120+</span> Showrooms</small>
+            </div>
+            <!-- Bikes Pictures -->
+            <div class="row row-cols-1 row-cols-lg-3 gy-5 gy-lg-0">
+                <div class="col d-flex justify-content-center">
+                    <img src="images/feature-bike.jpg" alt="" class="gray-scale mw-100" width="288" height="243">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="images/feature-bike.jpg" alt="" width="288" height="243" class="mw-100">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="images/feature-bike.jpg" alt="" class="gray-scale mw-100" width="288" height="243">
+                </div>
+            </div>
+        </section>
+        <!-- Happy Clients Says -->
+        <section class="container custom-margin">
+            <h1 class="text-center mb-5"><span>Happy</span><span class="orange"> Clients says</span></h1>
+            <!-- Clients Reviews Grid -->
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card text-center h-100 card-custom-style">
+                        <img src="images/user-1.png" class="card-img-top w-50 mx-auto mb-4" alt="...">
+                        <div class="card-body px-0">
+                            <p class="card-text text-secondary">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                        </div>
+                        <div class="card-footer border-0 pt-0 bg-transparent">
+                            <!-- Star Icons -->
+                            <div>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="far fa-star orange-light"></i>
+                            </div>
+                            <h6 class="text-info fw-bold my-3">Regina Miles</h6>
+                            <h6>Banker</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100 card-custom-style">
+                        <img src="images/user-2.png" class="card-img-top w-50 mx-auto mb-4" alt="...">
+                        <div class="card-body px-0">
+                            <p class="card-text text-secondary">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                        </div>
+                        <div class="card-footer border-0 pt-0 bg-transparent">
+                            <!-- Star Icons -->
+                            <div>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="far fa-star orange-light"></i>
+                            </div>
+                            <h6 class="text-info fw-bold my-3">Regina Miles</h6>
+                            <h6>Banker</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100 card-custom-style">
+                        <img src="images/user-3-rounded.png" class="card-img-top w-50 mx-auto mb-4" alt="...">
+                        <div class="card-body px-0">
+                            <p class="card-text text-secondary">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                        </div>
+                        <div class="card-footer border-0 pt-0 bg-transparent">
+                            <!-- Star Icons -->
+                            <div>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="fas fa-star orange-light"></i>
+                                <i class="far fa-star orange-light"></i>
+                            </div>
+                            <h6 class="text-info fw-bold my-3">Regina Miles</h6>
+                            <h6>Banker</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="container custom-margin">
+            <h1 class="text-center mb-5"><span>Frequently Asked</span><span class="orange"> Questions</span>
+            </h1>
+            <!-- FAQ Section Grid -->
+            <div class="row row-cols-1 row-cols-lg-2 gy-5 gx-lg-5 align-items-center">
+                <div class="col p-lg-5">
+                    <img src="images/faq.png" alt="" class="mw-100">
+                </div>
+                <div class="col">
+                    <!-- FAQ Accordion -->
+                    <div class="accordion" id="accordionExample">
+                        <!-- Accordion Item -->
+                        <div class="accordion-item mb-3 rounded-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fs-5 accordion-header-custom" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    What are the most important things I should know about riding a bike?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-secondary">
+                                    Safety First! Always obey the rules of the road. Obey all traffic signals, signs,
+                                    and laws. Get in the mindset of “driving” your bike—not just “riding” your bike.
+                                    This will help you be a more focused and legally compliant bike rider.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="accordion-item mb-3 border rounded-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fs-5 accordion-header-custom" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    How can I tell if my helmet is old and I need a new one?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-secondary">
+                                    Bear in mind that if the helmet did its job most people would tell you that they did
+                                    not even hit their head, or did not hit their head that hard. And the thin shells on
+                                    most helmets now tend to hide any dents in the foam. But if you can see marks on the
+                                    shell or measure any foam crush at all, replace the helmet.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="accordion-item border mb-3 rounded-3">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fs-5 accordion-header-custom" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    My bike has been in storage is it safe to ride?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-secondary">
+                                    <strong>The bottom line:</strong> Leaving your bike outside for a day or two won't
+                                    do major damage. You may see signs of rust after a week of neglect. After one month
+                                    in bad conditions, your beloved bike parts will start to degrade.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="accordion-item border rounded-3">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed fs-5 accordion-header-custom" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    What rules should I follow when riding my bike?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-secondary">
+                                    Bike on the road in the same direction as traffic (only bikers under age 12 are
+                                    legally allowed to ride on sidewalks).
+                                    Stop at red lights and stop signs, and obey other traffic signs (i.e. one-way
+                                    street, yield, etc.), just like you would in a car.
+                                    Use marked bike paths or lanes when they're available.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bike Repair Section-->
+        <section class="container">
+            <div class="text-center mb-5">
+                <h1><span class="orange">Repair</span> Your Bike</h1>
+                <small>We have <span class="fw-bold orange">300+</span> servicing centers for our customers.</small>
+            </div>
+            <!-- Repair Services Grid -->
+            <div class="row row-cols-1 row-cols-lg-3 gy-3 gx-lg-3">
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="images/repair-1.jpg" class="card-img-top card-img-custom" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bold"><span class="orange-light">ENGINE</span><br>REPAIR</h2>
+                            <p class="card-text fw-light text-secondary">We offer engine repair & overhaul services of
+                                high-quality to owners of various motorcycle models to make the engine work just as new.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button type="button" class="btn text-white bg-orange-light rounded-0 px-3">
+                                <i class="fas fa-angle-right fa-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="images/repair-2.jpg" class="card-img-top card-img-custom" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bold"><span class="orange-light">TRANSMISSION</span><br>REPAIR</h2>
+                            <p class="card-text fw-light text-secondary">We offer engine repair & overhaul services of
+                                high-quality to owners of various motorcycle models to make the engine work just as new.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button type="button" class="btn text-white bg-orange-light rounded-0 px-3">
+                                <i class="fas fa-angle-right fa-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="images/repair-3.jpg" class="card-img-top card-img-custom" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bold"><span class="orange-light">FRAME</span><br>STRAIGHTENING</h2>
+                            <p class="card-text fw-light text-secondary">We offer engine repair & overhaul services of
+                                high-quality to owners of various motorcycle models to make the engine work just as new.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button type="button" class="btn text-white bg-orange-light rounded-0 px-3">
+                                <i class="fas fa-angle-right fa-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter Section -->
+        <section class="newsletter mt-5 d-flex align-items-center">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center">
+                    <h2 class="text-white mb-3">NEWSLETTER</h2>
+                    <h4 class="fw-lighter text-center text-white mb-3">GET NOTIFIED OF BIKE OFFERS!
+                    </h4>
+                    <div class="input-group flex-column flex-md-row justify-content-center">
+                        <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-warning mt-3 mt-md-0" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
